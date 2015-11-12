@@ -1,11 +1,11 @@
-var foodWords = ["If Anthony Bourdain can be swooned by Gourdough&#39;s warm, fresh, holy-shit-delicious donuts, you should expect to fall in love with this little Austin treasure, too.   ",
-  "I want a big fat donut.   ", "Breakfast tacos for days.   ", "This one time I saw a bird covered in queso and wanted to cry.   ",
-   "I had brunch plans but.. mimosas got me mimosted.   ", 
-  "Venti iced skinny hazelnut macchiato, sugar-free syrup, extra shot, light ice, no whip.   ",
- "There's never enough queso.   ", "Frozen avocado margarita with sugar and chili-lime salt.   ", 
- "Pineapple basil lime lemon watermelon infused water.  ", "Breaking news: Bluebell Ice Cream is back in stock.   ",
-  "Grande, iced, sugar-free, vanilla latte with soy milk.   ", 
-  "Texas-fried turkey breast with award-winning oaxacan mole sauce, mexican rice, avocado, quest fresco, and fresh cilantro - served on a flour tortilla.   ", ];
+var foodWords = ["If Anthony Bourdain can be swooned by Gourdough&#39;s warm, fresh, holy-shit-delicious donuts, you should expect to fall in love with this little Austin treasure, too.   "  ,
+  "I want a big fat donut.   "  , "Breakfast tacos for days.   "  , "This one time I saw a bird covered in queso at Torchy&#39;s and wanted to cry.   "  ,
+   "I had brunch plans but..   "  , 
+  "Venti iced skinny hazelnut macchiato, sugar-free syrup, extra shot, light ice, no whip.   "  ,
+ "There's never enough queso.   "  , "Frozen avocado margarita with sugar and chili-lime salt.   "  , 
+ "Pineapple basil lime lemon watermelon infused water.  "  ,  "Breaking news: Bluebell Ice Cream is back in stock.   "  ,
+  "Grande, iced, sugar-free, vanilla latte with soy milk.   "  , 
+  "Texas-fried turkey breast with award-winning oaxacan mole sauce, mexican rice, avocado, quest fresco, and fresh cilantro - served on a flour tortilla.   "  , ];
 
 
 var funWords = ["Bro...   ", "BRO!   ", "Alrighty alrighty alright.    ",
