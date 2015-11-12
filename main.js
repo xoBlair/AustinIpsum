@@ -9,64 +9,37 @@ var count = 0;
 
 function chooseParagraph(number){ 
 	if (count == 1){ 
-		$("#paragraph").text("");
-		var nonRepeating = [];
-		for (var i = 0; i < number; i++){
-			checkWord();
-			function checkWord(){
-				var word = foodWords[i];
-				var randomNum = Math.random() * foodWords.length;
-				var randomIndex = Math.floor(randomNum);
-				var randomWord = foodWords[randomIndex];
-				var isUnique = true;
-				nonRepeating.forEach(function(existingWord){
-					if (existingWord == randomWord)
-					{ 
-						isUnique = false;
-					}
-				});
-				if (isUnique == true)
-				{
-					nonRepeating.push(randomWord);
-					$("#paragraph").append(randomWord);
-				}
-				else if (isUnique == false)
-				{
-					checkWord();
-				}
-			}
-			// nonRepeat.push(randomWord);
-			
-			// $("#paragraph").append(word);
-		}
+		var wordArray = foodWords;
 	}
-	if (count == 2){
-		$("#paragraph").text("");
-		var nonRepeat = [];
-		for (var i = 0; i < number; i++){
-			checkWordAgain();
-			function checkWordAgain(){
-				var word = funWords[i];
-				var randomNum = Math.random() * funWords.length;
-				var randomIndex = Math.floor(randomNum);
-				var randomWord = funWords[randomIndex];
-				var isUnique = true;
-				nonRepeat.forEach(function(existingWord2){
-					if (existingWord2 == randomWord)
-					{ 
-						isUnique = false;
-					}
-				});
-				if (isUnique == true)
-				{
-					nonRepeat.push(randomWord);
-					$("#paragraph").append(randomWord);
+	else if (count == 2){
+		var wordArray = funWords;
+	}
+
+	$("#paragraph").text("");
+	var nonRepeating = [];
+	for (var i = 0; i < number; i++){
+		checkWord();
+		function checkWord(){
+			var word = wordArray[i];
+			var randomNum = Math.random() * wordArray.length;
+			var randomIndex = Math.floor(randomNum);
+			var randomWord = wordArray[randomIndex];
+			var isUnique = true;
+			nonRepeating.forEach(function(existingWord){
+				if (existingWord == randomWord)
+				{ 
+					isUnique = false;
 				}
-				else if (isUnique == false)
-				{
-					checkWordAgain();
-				}
+			});
+			if (isUnique == true)
+			{
+				nonRepeating.push(randomWord);
+				$("#paragraph").append(randomWord);
 			}
+			else if (isUnique == false)
+			{
+				checkWord();
+			} 
 		}
 	}
 }
